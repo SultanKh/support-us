@@ -1,0 +1,52 @@
+.cover {
+    background-color: #58aff6;
+    top: 0;
+    height: 50vh;
+    overflow-x: hidden;
+    display: flex;
+    place-items: center;
+    justify-content: center;
+    background-size: cover;
+    background-position: 2rem;
+
+    margin-bottom: 2rem;
+    margin: 1rem;
+
+    border: 2px solid #c3c6ce;
+    border-radius: 20px;
+
+    .content {
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        padding: 1rem;
+        backdrop-filter: blur(15px);
+        color: black;
+
+        h1 {
+            font-size: 50px;
+        }
+    }
+}
+
+
+@media (min-width: 1200px) {
+    .cover {
+        background: url(../../assets/we-stand-with-israel.jpg) no-repeat center;
+        place-items: center;
+        justify-content: center;
+        background-size: cover;
+
+    }
+}
+
+@media (max-width: 1200px) {
+    .cover {
+        // background: url(https://images7.alphacoders.com/102/1025676.png) center;
+        background: url(../../assets/we-stand-with-israel.jpg) no-repeat top;
+        place-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+}

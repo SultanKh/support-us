@@ -1,0 +1,66 @@
+.attack-hamas {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+
+    h1 {
+        text-align: center;
+    }
+
+    .part-wrapper {
+        margin: 3rem;
+
+        .attack-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #c3c6ce18;
+            padding: 1rem;
+            gap: 0.8rem;
+            flex: 1 2 1;
+            margin: 1rem 0;
+
+            .title {
+                flex: 1;
+            }
+
+            .description {
+                flex: 2;
+
+                flex-wrap: wrap;
+            }
+
+            .button-send {
+                flex: 1;
+
+                button {
+                    overflow-wrap: break-word;
+                    width: 500px;
+                    border-radius: 0;
+                    font-size: 3rem;
+                    text-align: center;
+                    background: rgba(255, 0, 0, 0.473);
+
+                    span {
+                        width: 100%;
+                    }
+
+                }
+
+            }
+
+        }
+
+
+
+        .reuslt-part {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            border: 2px solid #ff0000;
+            padding: 1rem;
+
+        }
+    }
+
+}

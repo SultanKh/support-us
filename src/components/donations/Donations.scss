@@ -1,0 +1,36 @@
+.Donations {
+    display: grid;
+    justify-content: center;
+    padding: 1rem 8rem;
+    margin-top: 6rem;
+    gap: 1.66rem;
+
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+    .item-span-2 {
+        grid-column: span 2;
+    }
+}
+
+
+
+@media (800px < width < 1200px) {
+    .Donations {
+        grid-template-columns: 1fr 1fr;
+        padding: 1rem 2rem;
+
+    }
+}
+
+@media (max-width: 800px) {
+    .Donations {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin-top: 1rem;
+
+        .item-span-2 {
+            grid-column: span 1;
+        }
+    }
+}
