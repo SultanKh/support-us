@@ -1,0 +1,162 @@
+:root {
+    line-height: 1.5;
+    color-scheme: light dark;
+    color: rgba(255, 255, 255, 0.87);
+    background-color: #242424;
+    font-synthesis: none;
+    text-rendering: optimizeLegibility;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    -webkit-text-size-adjust: 100%;
+}
+
+
+* {
+    box-sizing: border-box;
+}
+
+html,
+body {
+    padding: 0;
+}
+
+body {
+    margin: 0;
+    font-family: Arial, Helvetica, sans-serif;
+}
+
+.content {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 1rem;
+    backdrop-filter: blur(15px);
+    color: black;
+}
+
+.Donations {
+    display: grid;
+    justify-content: center;
+    padding: 1rem 8rem;
+    margin-top: 6rem;
+    gap: 1.66rem;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr 1fr;
+
+}
+
+.card-1 {
+    background-image: url(./assets/loneIsrael.jpg);
+
+}
+
+.card-2 {
+    background-image: url(./assets/loneSoldiers.jpg);
+}
+
+.card-3 {
+    background-image: url(./assets/loni.jpg);
+}
+
+.card-4 {
+    background-image: url(./assets/standWithIsr.jpg);
+}
+
+.card {
+    height: 254px;
+    border-radius: 20px;
+    position: relative;
+    padding: 0.8rem;
+    border: 2px solid #c3c6ce;
+    transition: 0.5s ease-out;
+    overflow: visible;
+
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+
+}
+
+.card:hover {
+    border-color: #008bf8;
+    box-shadow: 0 4px 18px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card:hover .card-button {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+    padding: 0.2rem;
+    margin-bottom: 1.2rem;
+    cursor: pointer;
+}
+
+.card-details {
+    backdrop-filter: brightness(0.4);
+    border-radius: 20px;
+    color: black;
+    height: 100%;
+    gap: 0.2em;
+    display: grid;
+    place-content: center;
+
+
+}
+
+.text-title {
+    font-size: 2.8em;
+    font-weight: 200;
+    color: #fff;
+    backdrop-filter: blur(30px);
+    margin: unset;
+    padding: unset;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.text-body {
+    color: rgb(134, 134, 134);
+    margin: unset;
+    padding: unset;
+}
+
+.card-button {
+    transform: translate(-50%, 125%);
+    width: 60%;
+    border-radius: 1rem;
+    border: none;
+    background-color: #008bf8;
+    color: #fff;
+    font-size: 1rem;
+    padding: 0.1rem 1rem;
+    position: absolute;
+    left: 50%;
+    bottom: 0;
+    opacity: 0;
+    transition: 0.3s ease-out;
+}
+
+.Footer {
+    background: linear-gradient(to right, #0090c5 0%, #00cab0 100%);
+    min-height: 20vh;
+    padding: 1rem;
+    margin-top: 6rem;
+}
+
+@media (max-width: 1200px) {
+    .cover {
+        background: url(./assets/we-stand-with-israel.jpg) no-repeat top;
+        place-items: center;
+        justify-content: center;
+        background-size: cover;
+    }
+}
+
+@media (max-width: 800px) {
+    .Donations {
+        grid-template-columns: 1fr;
+        padding: 1rem;
+        margin-top: 1rem;
+    }
+}
